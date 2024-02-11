@@ -6,13 +6,15 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="bg-stone-50">
+      <div className="max-w-screen-xl mx-auto">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
       </Routes>
       <Footer />
+    </div>
     </div>
   );
 }
