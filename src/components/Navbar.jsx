@@ -10,7 +10,7 @@ function Navbar() {
       </Link>
       <div className="flex items-center justify-center font-semibold">
         <Link to="/" className="m-2">Home</Link>
-        <a href="#exercises" className="m-2">
+        <a href="#exercise" className="m-2">
           Exercises
         </a>
       </div>

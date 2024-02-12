@@ -1,14 +1,23 @@
-import HeroBanner from '@/components/HeroBanner'
-import SearchExercises from '@/components/SearchExercises'
-import React from 'react'
+import Exercises from "@/components/Exercises";
+import HeroBanner from "@/components/HeroBanner";
+import SearchExercises from "@/components/SearchExercises";
+import React, { useState } from "react";
 
 function Home() {
+  const [data, setData] = useState([]);
+  const [api, setApi] = useState("");
   return (
     <section>
       <HeroBanner />
-      <SearchExercises />
+      <SearchExercises
+        setValue={setData}
+        exercises={api}
+        setExercises={setApi}
+        setValue1={setApi}
+      />
+      <Exercises value={data} />
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;
