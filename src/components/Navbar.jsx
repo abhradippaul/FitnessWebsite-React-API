@@ -10,9 +10,9 @@ function Navbar() {
       </Link>
       <div className="flex items-center justify-center font-semibold">
         <Link to="/" className="m-2">Home</Link>
-        <a href="#exercise" className="m-2">
-          Exercises
-        </a>
+        <Link to="/exercise" className="m-2">Exercises</Link>
+          
+        
       </div>
     </nav>
   );

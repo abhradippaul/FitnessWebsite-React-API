@@ -1,8 +1,12 @@
+import Details from '@/components/Details'
+import ExerciseVideos from '@/components/ExerciseVideos'
 import React from 'react'
 
-function ExerciseDetail() {
+function ExerciseDetail({cardValue}) {
   return (
-    <div>ExerciseDetail</div>
+    <div>
+      <Details cardValue={cardValue} />
+    </div>
   )
 }
 
