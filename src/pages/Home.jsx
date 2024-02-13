@@ -15,7 +15,7 @@ function Home() {
         setExercises={setApi}
         setValue1={setApi}
       />
-      <Exercises value={data} />
+      <Exercises value={data} cardInfo={api} />
     </section>
   );
 }

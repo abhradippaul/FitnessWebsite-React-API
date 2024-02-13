@@ -8,7 +8,6 @@ import {
 import GymLogo from "../assets/icons/gym.png";
 
 function HorizontalScrollbar({ data,getDataFromCard }) {
-  data = Array.from(data);
   // console.log(data);
   if (data) {
     return (
