@@ -3,7 +3,7 @@ import HeroBanner from "@/components/HeroBanner";
 import SearchExercises from "@/components/SearchExercises";
 import React, { useState } from "react";
 
-function Home() {
+function Home({setCardValue}) {
   const [data, setData] = useState([]);
   const [api, setApi] = useState("");
   return (
@@ -15,7 +15,7 @@ function Home() {
         setExercises={setApi}
         setValue1={setApi}
       />
-      <Exercises value={data} cardInfo={api} />
+      <Exercises value={data} cardInfo={api} setCardValue={setCardValue} />
     </section>
   );
 }
