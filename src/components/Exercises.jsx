@@ -1,14 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import ExercisesCard from "./ExercisesCard";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
 
 function Exercises({ value,setCardValue }) {
   // console.log(value);

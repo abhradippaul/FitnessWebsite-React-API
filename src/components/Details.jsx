@@ -1,8 +1,6 @@
 import React from "react";
 
 function Details({ cardValue }) {
-  console.log(cardValue);
-  // console.log(cardValue.instructions)
   if (cardValue) {
     return (
       <div className="h-[90dvh] flex items-center justify-between">
