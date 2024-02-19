@@ -3,15 +3,15 @@ import React from "react";
 function Details({ cardValue }) {
   if (cardValue) {
     return (
-      <div className="h-[90dvh] flex items-center justify-between">
-        <div className="w-1/2">
+      <div className="min-h-[90dvh] flex flex-col items-center justify-between  md:flex-row">
+        <div className="w-1/2 min-w-64">
           <img
             className="h-full w-full object-cover"
             src={cardValue.gifUrl}
             alt="image"
           />
         </div>
-        <div className="h-full w-1/2 p-8 flex items-center justify-around flex-col">
+        <div className=" border h-full min-w-64 w-1/2 p-8 flex items-center justify-around flex-col">
           <h1 className=" my-8 text-2xl font-bold md:text-4xl">
             {cardValue.name}
           </h1>
