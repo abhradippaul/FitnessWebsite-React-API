@@ -11,7 +11,7 @@ function Details({ cardValue }) {
             alt="image"
           />
         </div>
-        <div className=" border h-full min-w-64 w-1/2 p-8 flex items-center justify-around flex-col">
+        <div className="h-full min-w-64 w-1/2 p-8 flex items-center justify-around flex-col">
           <h1 className=" my-8 text-2xl font-bold md:text-4xl">
             {cardValue.name}
           </h1>
